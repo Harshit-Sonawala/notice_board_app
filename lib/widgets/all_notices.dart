@@ -8,7 +8,7 @@ class AllNotices extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: 10,
-      itemBuilder: (BuildContext context, int eachNotice) => Notice(),
+      itemBuilder: (BuildContext context, int eachNotice) => const Notice(),
     );
   }
 }

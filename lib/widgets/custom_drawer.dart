@@ -25,15 +25,15 @@ class CustomDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: Text('Drawer Tile 1'),
+            title: const Text('Drawer Tile 1'),
             onTap: () => {},
           ),
           ListTile(
-            title: Text('Drawer Tile 2'),
+            title: const Text('Drawer Tile 2'),
             onTap: () => {},
           ),
           ListTile(
-            title: Text('Drawer Tile 3'),
+            title: const Text('Drawer Tile 3'),
             onTap: () => {},
           ),
         ],

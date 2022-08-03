@@ -17,7 +17,20 @@ class _HomeScreenState extends State<HomeScreen> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Notice Board App'),
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.account_circle,
+              ),
+            ),
+          ],
+          title: const Text(
+            'Notice Board App',
+            style: TextStyle(
+              fontSize: 24,
+            ),
+          ),
           bottom: TabBar(
             tabs: [
               Tab(
@@ -25,8 +38,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Icon(Icons.list),
-                    SizedBox(width: 8),
-                    Text('All'),
+                    SizedBox(width: 10),
+                    Text('All', style: TextStyle(fontSize: 18)),
                   ],
                 ),
               ),
@@ -35,8 +48,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Icon(Icons.announcement),
-                    SizedBox(width: 8),
-                    Text('Important'),
+                    SizedBox(width: 10),
+                    Text('Important', style: TextStyle(fontSize: 18)),
                   ],
                 ),
               ),
@@ -44,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         drawer: const CustomDrawer(),
-        body: TabBarView(
+        body: const TabBarView(
           children: <Widget>[
             AllNotices(),
             ImportantNotices(),
